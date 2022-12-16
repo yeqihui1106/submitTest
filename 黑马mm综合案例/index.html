@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑马绵绵</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入swiper插件的css文件 -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 头部区域 -->
+        <header class="header">黑马绵绵</header>
+
+        <!-- 导航栏区域 -->
+        <nav class="nav">
+            <a href="#" class="nav-items">
+                <img src="icons/icon1.png" alt="">
+                <span>HR面试</span>
+            </a>
+            <a href="#" class="nav-items">
+                <img src="icons/icon2.png" alt="">
+                <span>笔试</span>
+            </a>
+            <a href="#" class="nav-items">
+                <img src="icons/icon3.png" alt="">
+                <span>技术面试</span>
+            </a>
+            <a href="#" class="nav-items">
+                <img src="icons/icon4.png" alt="">
+                <span>模拟面试</span>
+            </a>
+            <a href="#" class="nav-items">
+                <img src="icons/icon5.png" alt="">
+                <span>面试技巧</span>
+            </a>
+            <a href="#" class="nav-items">
+                <img src="icons/icon6.png" alt="">
+                <span>薪资查询</span>
+            </a>
+        </nav>
+
+        <!-- go模块 -->
+        <div class="go">
+            <img src="images/go.png" alt="">
+        </div>
+    </div>
+
+    <!-- 就业指导模块 -->
+    <div class="content">
+        <!-- 指导头部 -->
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="icons/i2.png" alt=""></span>
+                就业指导
+            </h4>
+            <a href="#" class="mroe">更多 >></a>
+        </div>
+        <!-- 就业指导旋转木马轮播图 -->
+        <div class="slideshow">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic.png" alt=""></a>
+                        <p>老师教你应对面试技巧</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic2.jpg" alt=""></a>
+                        <p>刘德华帅不</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#"><img src="images/pic3.jpg" alt=""></a>
+                        <p>刘德华帅死我了</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add 左右箭头 (我们需要提出来之后子绝父相)-->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- 充电学习模块 -->
+    <div class="content">
+        <!-- 指导头部 -->
+        <div class="con-hd">
+            <h4>
+                <span class="icon"><img src="icons/i1.png" alt=""></span>
+                充电学习
+            </h4>
+            <a href="#" class="mroe">更多 >></a>
+        </div>
+
+        <!-- 学习轮播图模块 -->
+        <div class="study-slideshow">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/study1.png" alt="">
+                        <h5>说地道英语,告别中式英语</h5>
+                        <p><span>156 </span> 人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/study1.png" alt="">
+                        <h5>说地道英语,告别中式英语</h5>
+                        <p><span>156 </span> 人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/study1.png" alt="">
+                        <h5>说地道英语,告别中式英语</h5>
+                        <p><span>156 </span> 人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/study1.png" alt="">
+                        <h5>说地道英语,告别中式英语</h5>
+                        <p><span>156 </span> 人学习</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/study1.png" alt="">
+                        <h5>说地道英语,告别中式英语</h5>
+                        <p><span>156 </span> 人学习</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <a href="#" class="footer-items">
+            <img src="icons/home.png" alt="">
+            <span>首页</span>
+        </a>
+        <a href="#" class="footer-items">
+            <img src="icons/net.png" alt="">
+            <span>技术面试</span>
+        </a>
+        <a href="#" class="footer-items">
+            <img src="icons/ms.png" alt="">
+            <span>模拟笔试</span>
+        </a>
+        <a href="#" class="footer-items">
+            <img src="icons/user.png" alt="">
+            <span>我的主页</span>
+        </a>
+    </footer>
+
+    <!-- 引入淘宝团队的js搭配rem -->
+    <script src="js/flexible.js"></script>
+    <!-- 引入swiper插件的js文件 -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+
+        // 将轮播图js复制在不同的立即执行函数调用不同的类名这样防止冲突
+        // 第一个函数里是 就业指导旋转木马轮播图
+        (function () {
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 2,   // 定义显示多少个图层盒子
+                spaceBetween: 30,   // 每一个盒子的间距
+                centeredSlides: true,  // 是否设置一个盒子在居中显示
+                loop: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        })();
+
+        // 第二个函数里 充电学习轮播图
+        (function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 2.5, // 定义显示多少个图层盒子
+                spaceBetween: 20,
+            });
+        })()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background-color: #F2F4F7;
+  margin-bottom: 3.1rem;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+.wrap {
+  background-color: #fff;
+}
+.header {
+  height: 2.1333rem;
+  text-align: center;
+  line-height: 2.1333rem;
+  font-size: 0.9333rem;
+  color: #1C1C1C;
+  border-bottom: 1px solid #EAEAEA;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav .nav-items {
+  display: flex;
+  margin-top: 0.6667rem;
+  flex-direction: column;
+  align-items: center;
+  flex: 33.33%;
+}
+.nav .nav-items img {
+  width: 3.7067rem;
+}
+.nav .nav-items span {
+  font-size: 0.6667rem;
+  color: #707070;
+}
+.go {
+  margin-top: 1.0667rem;
+  padding: 0.4267rem;
+  padding-bottom: 1.0667rem;
+}
+.content {
+  margin-top: 0.2667rem;
+  padding: 1.0667rem 0.5867rem;
+  background-color: #fff;
+}
+.content .con-hd {
+  display: flex;
+  height: 1.0133rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .con-hd h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 0.64rem;
+  color: #333333;
+}
+.content .con-hd h4 .icon {
+  display: inline-block;
+  width: 0.96rem;
+  height: 0.96rem;
+  vertical-align: bottom;
+}
+.content .con-hd .mroe {
+  font-size: 0.5867rem;
+  color: #999999;
+}
+.content .slideshow {
+  position: relative;
+  margin-top: 0.8rem;
+}
+.content .slideshow .swiper-container {
+  height: 100%;
+  width: 14.4rem;
+}
+.content .slideshow .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+.content .slideshow .swiper-slide a {
+  width: 8.7467rem;
+  height: 10.0267rem;
+}
+.content .slideshow .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.content .slideshow .swiper-slide p {
+  width: 8.7467rem;
+  color: #333;
+  font-size: 0.6667rem;
+  margin-top: 0.5333rem;
+}
+.content .slideshow .swiper-slide-active,
+.content .slideshow .swiper-slide-duplicate-active {
+  transform: scale(1);
+  z-index: 2;
+  opacity: 1;
+}
+.study-slideshow {
+  position: relative;
+  overflow: hidden;
+}
+.study-slideshow .swiper {
+  width: 100%;
+  height: 100%;
+}
+.study-slideshow .swiper-wrapper {
+  padding: 0.2667rem;
+}
+.study-slideshow .swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  width: 7.7333rem;
+  height: 9.0667rem;
+  border-radius: 0.1333rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+.study-slideshow .swiper-slide img {
+  margin: 0.2133rem 0.2133rem 0.5333rem 0.2133rem;
+  display: block;
+  width: 6.7533rem;
+  height: 4.56rem;
+  object-fit: cover;
+}
+.study-slideshow .swiper-slide h5 {
+  font-size: 0.5333rem;
+  font-weight: 400;
+  margin: 0 0 0.5333rem 0.2133rem;
+  margin-left: 0.2133rem;
+  color: #333;
+}
+.study-slideshow .swiper-slide p {
+  padding-left: 0.2133rem;
+  color: #929191;
+}
+.study-slideshow .swiper-slide p span {
+  color: orange;
+}
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 20rem;
+  height: 2.9333rem;
+  padding-top: 0.5333rem;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+.footer .footer-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+}
+.footer .footer-items:nth-child(1) {
+  color: #57c9ea;
+}
+.footer .footer-items img {
+  width: 1.0667rem;
+  height: 1.0667rem;
+  margin-bottom: 0.2667rem;
+}
+.footer .footer-items span {
+  font-size: 0.5867rem;
+}
